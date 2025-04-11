@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <title>@ViewData["Title"]</title>
+    <title>@ViewData["Title"] ?? "Default Title"</title> <!-- Add a fallback title -->
 </head>
 
 <body>
     <header>
-        <h1>My Application</h1>
+        <h1>Hello .NET9 Application</h1>
     </header>
     <main>
         @RenderBody()
